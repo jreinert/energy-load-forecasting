@@ -1,0 +1,16 @@
+# Environment
+.env
+
+# Raw data - don't commit, too large
+data/raw/
+
+# Keep processed data and models as needed for Streamlit Cloud
+#data/processed/
+#models/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Vs Code
+.vscode/

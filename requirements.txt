@@ -1,0 +1,12 @@
+torch==2.7.0
+pandas
+numpy
+scikit-learn
+streamlit
+plotly
+joblib
+holidays
+requests
+python-dotenv
+matplotlib
+xgboost
