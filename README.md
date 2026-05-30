@@ -6,6 +6,19 @@ A PyTorch LSTM model for hourly electricity demand forecasting in the Midcontine
 
 ---
 
+## Exploratory Data Analysis
+
+Full EDA with findings, visualizations, and feature selection analysis:
+
+📓 **[View EDA Notebook](notebooks/01_eda.ipynb)**
+
+Key findings:
+- Strong multi-scale seasonality confirmed (annual, daily, weekly cycles)
+- U-shaped temperature-demand relationship justifies neural network over linear model
+- Autocorrelation of 0.923 at 24hr lag and 0.779 at 168hr lag justifies lag features and 168hr sequence length
+- LSTM reduced residual autocorrelation by 70-89% at key lags — feature set successfully captured dominant temporal structure
+- No features identified for removal — all 13 features carry independent information
+
 ## Results
 
 | Model | MAE | RMSE | MAPE |
